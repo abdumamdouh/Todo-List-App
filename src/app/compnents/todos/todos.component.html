@@ -2,7 +2,7 @@
 <!-- $event ??  -->
 <!-- both components app-add-todo & app-todo-item are childern of todos component so we can emit data from them to this component  -->
 
-<app-add-todo></app-add-todo>
+<app-add-todo (addTodo)="addTodo($event)"></app-add-todo>
 <app-todo-item
   *ngFor="let todo of todos"
   [todo]="todo"

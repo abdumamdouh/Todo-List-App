@@ -7,7 +7,7 @@ import { TodoService } from '../../services/todo.service';
   styleUrls: ['./todo-item.component.css'],
 })
 export class TodoItemComponent implements OnInit {
-  //define the input property to this component comming from todos component //its father component
+  //define the input property to this component comming from todos component //its father component, from todos to todo-item
   @Input() todo: Todo;
   //define the output of this component // the event we're emitting
   @Output() deleteTodo: EventEmitter<Todo> = new EventEmitter();

@@ -32,4 +32,10 @@ export class TodosComponent implements OnInit {
     // delete from the API using the service file
     this.todoService.deleteTodo(todo).subscribe();
   }
+
+  addTodo(todo: Todo) {
+    this.todoService.addTodo(todo).subscribe((todo) => {
+      this.todos.push(todo);
+    });
+  }
 }

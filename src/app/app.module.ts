@@ -12,6 +12,7 @@ import { TodoItemComponent } from './compnents/todo-item/todo-item.component';
 import { HeaderComponent } from './compnents/layout/header/header.component';
 import { AddTodoComponent } from './compnents/add-todo/add-todo.component';
 import { from } from 'rxjs';
+import { AboutComponent } from './compnents/pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { from } from 'rxjs';
     TodoItemComponent,
     HeaderComponent,
     AddTodoComponent,
+    AboutComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
