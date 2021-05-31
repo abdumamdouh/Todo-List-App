@@ -1,0 +1,16 @@
+<!-- the structure of todo-item component 
+     access the todo proerty we get from the parent component
+-->
+<!--  using ngClass directive to set classes to div tag with a method setClasses from the .ts file // we use the directive with [] -->
+<!--  we will add two events one for the input tag and one for the button // this is called binding events we use ()
+and iside it the event and assign it to a method from the .ts file
+    // we are passing to the methods the todo object which is the input comming from the parent component 
+-->
+
+<div [ngClass]="setClasses()">
+  <p>
+    <input (change)="onToggle(todo)" type="checkbox" />
+    {{ todo.title }}
+    <button (click)="onDelete(todo)" class="del">x</button>
+  </p>
+</div>
