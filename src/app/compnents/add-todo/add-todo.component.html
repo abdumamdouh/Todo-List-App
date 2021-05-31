@@ -1,0 +1,9 @@
+<!-- we want to bind this title input into the title proerty inside the component class we have made  -->
+<!-- to do the binding we use what is called ngModel it's a directive which uses [()] because it's two way data binding  -->
+<!-- the name attribute should be the same as yhe ngModel and to use this directive you should enable the Form Module  -->
+<!-- we will add ngSubmit event to the form and it will handle the form e.preventDefaults //prevents the form from submitting  -->
+
+<form class="form" (ngSubmit)="onSubmit()">
+  <input type="text" name="title" [(ngModel)]="title" placeholder="Add Todo." />
+  <input type="submit" value="Submit" class="btn" />
+</form>
